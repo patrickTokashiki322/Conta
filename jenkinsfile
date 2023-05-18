@@ -3,6 +3,6 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-      bat "sonarScanner/bin/sonar-scanner.bat"
+      bat 'sonarScanner\\bin\\sonar-scanner.bat'
   }
 }
