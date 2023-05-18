@@ -1,3 +1,5 @@
-stage('SonarQube Analysis') {
-    bat 'sonarScanner\\bin\\sonar-scanner.bat'
+node {
+  stage('SonarQube Analysis') {
+      bat 'sonarScanner\\bin\\sonar-scanner.bat'
+  }
 }
