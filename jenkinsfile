@@ -1,6 +1,6 @@
 node {
   stage('SonarQube Analysis') {
-      bat 'sonarScanner\\bin\\sonar-scanner.bat'
+      bat 'sonarScanner\\bin\\sonar-scanner.bat -D"sonar.projectKey=Conta" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_bde3486c7e40012d59b3fc4fba91dfc51d2c5d49"'
   }
 }
 
