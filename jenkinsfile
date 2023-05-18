@@ -3,9 +3,6 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-    def scannerHome = tool 'SonarScanner';
-    withSonarQubeEnv() {
-      sh "sonar-scanner-4.8.0.2856-windows/bin/sonar-scanner.bat"
-    }
+      bat "sonar-scanner-4.8.0.2856-windows/bin/sonar-scanner.bat"
   }
 }
